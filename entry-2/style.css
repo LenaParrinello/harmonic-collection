@@ -1,4 +1,5 @@
 .background{
-    background: linear-gradient(#d6472b,#e68f43)
+    background: linear-gradient(#d6472b,#e68f43)no-repeat; background-attachment: fixed;
+  
 }
 

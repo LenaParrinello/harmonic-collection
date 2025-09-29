@@ -1,6 +1,6 @@
 .background{
-    background: linear-gradient(#2b698f,#91caed)
-
+    background:linear-gradient(#2b698f,#91caed)no-repeat; background-attachment: fixed;
+  
 
 
 }
