@@ -1,4 +1,35 @@
 .background{
-    background: linear-gradient(#d9b73f,#e5d8aa)no-repeat; background-attachment: fixed;
+    background: linear-gradient(white#f5d142#edb44a);
+  margin:0;
+  padding:0;
+  height:100vh;
+
+  background-image: url(Untitled_Artwork\ 5.gif);
   
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+
+
+
+ 
+
 }
+
+.box{
+ background-color: #ffffff;  
+    border: 2px solid rgb(255, 255, 255);     
+    border-radius: 10px;        
+    padding: 20px;               
+    width: 300px;    
+    display:inline-block; 
+    margin: 10px;    
+} 
+.box1{ background-color: #ffffff;  
+    border: 2px solid rgb(255, 255, 255);     
+    border-radius: 10px;        
+    padding: 20px;               
+    width: 300px;    
+    display:inline-block; 
+    margin: 10px;     }
