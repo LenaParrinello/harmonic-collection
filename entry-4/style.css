@@ -11,10 +11,6 @@
   background-repeat: no-repeat;
   image-rendering: pixelated;
 
-
-
- 
-
 }
 
 .box{
@@ -23,7 +19,7 @@
     border-radius: 10px;        
     padding: 20px;               
     width: 300px;    
-    display:inline-block; 
+   display: inline-block;
     margin: 10px;    
 } 
 .box1{ background-color: #ffffff;  
@@ -43,7 +39,7 @@
   max-width: 100%;
   height: auto;
   display: inline-block;
-  image-rendering: ;
+  image-rendering: auto
 }
 
 
@@ -58,15 +54,4 @@
   margin: 0;
   padding: 0;
   transform: none;     
-}
-
-.zoom:hover::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url;
-  z-index: 9998; /* just behind the image */
 }
