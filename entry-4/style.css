@@ -32,4 +32,41 @@
     padding: 20px;               
     width: 300px;    
     display:inline-block; 
-    margin: 10px;     }
+    margin: 10px;     
+
+
+}
+
+.zoom {
+  transition: all 0.10s ease; 
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  image-rendering: ;
+}
+
+
+.zoom:hover {
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100vw;         
+  height: 100vh;       
+  object-fit: contain;  
+  z-index: 9999;      
+  margin: 0;
+  padding: 0;
+  transform: none;     
+}
+
+.zoom:hover::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url;
+  z-index: 9998; /* just behind the image */
+}
