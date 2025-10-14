@@ -5,8 +5,8 @@
 
 }
  
-.card
-{background-color: #ffffff;  
+.box{
+    background-color: #ffffff;  
     border: 2px solid rgb(174, 228, 248);     
     border-radius: 10px;        
     padding: 40px;               
