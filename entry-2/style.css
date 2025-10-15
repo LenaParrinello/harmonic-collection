@@ -1,21 +1,8 @@
 .background{
-    background: linear-gradient(#d6472b,#e68f43)no-repeat; background-attachment: fixed;
+    background: linear-gradient(#d6472b,#e68f43)no-repeat; 
+    background-attachment: fixed;
   
 }
 
-.card-container {
-  background-color: rgba(250, 128, 114, 0);
-  display: flex;
-  gap: 20px;
-}
 
 
-.card {
-  background-color: #f02929; 
-   border: 2px solid #d82a2a;    
- width: 25%;
- border: 2px solid rgb(235, 53, 53);    
-   border-radius: 10px;       
-   padding: 40px;  
-  width: 25%;
-}
