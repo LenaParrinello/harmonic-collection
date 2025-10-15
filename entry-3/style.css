@@ -1,20 +1,21 @@
 .background{
-    background:linear-gradient(#2b698f,#91caed)no-repeat; background-attachment: fixed;
+    background:linear-gradient(#c1d5e1,#409ad3)no-repeat; background-attachment: fixed;
 
 }
  
-.card-container {
+ .card-container {
   background-color: rgba(250, 128, 114, 0);
   display: flex;
   gap: 20px;
 }
 
 .card {
-  background-color: #ffffff; 
-   border: 2px solid rgb(174, 228, 248);    
- width: 25%;
- border: 2px solid rgb(174, 228, 248);    
-   border-radius: 10px;       
-   padding: 40px;  
+  width: 25%;
+  background-color: #ffffff;  
+    border: 2px solid rgb(91, 162, 214);     
+    border-radius: 10px;        
+    height: 300px;
+    
 }
+
 
