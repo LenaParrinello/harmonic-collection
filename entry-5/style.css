@@ -1,16 +1,21 @@
 .background{
-    background: linear-gradient(#63cda4,#40925a)no-repeat; background-attachment: fixed;
+    background: linear-gradient(#bce49b,#40925a)no-repeat; background-attachment: fixed;
   
 }
 
-.box{
-      background-color: #ffffff;  
-    border: 2px solid rgb(66, 216, 159);     
+.card-container {
+  background-color: rgba(250, 128, 114, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 25%;
+  background-color: #ffffff;  
+    border: 2px solid rgb(199, 240, 132);     
     border-radius: 10px;        
-    padding: 20px;               
-    width: 300px;    
-    display:inline-block; 
-    margin: 10px;  
+    height: 300px;
+    
 }
 
 

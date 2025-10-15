@@ -13,25 +13,23 @@
 
 }
 
-.box{
- background-color: #ffffff;  
-    border: 2px solid rgb(255, 255, 255);     
-    border-radius: 10px;        
-    padding: 20px;               
-    width: 300px;    
-   display: inline-block;
-    margin: 10px;    
-} 
-.box1{ background-color: #ffffff;  
-    border: 2px solid rgb(255, 255, 255);     
-    border-radius: 10px;        
-    padding: 20px;               
-    width: 300px;    
-    display:inline-block; 
-    margin: 10px;     
+  
 
-
+.card-container {
+  background-color: rgba(250, 128, 114, 0);
+  display: flex;
+  gap: 20px;
 }
+
+.card {
+  width: 25%;
+  background-color: #f2c75c;  
+    border: 2px solid rgb(237, 202, 61);     
+    border-radius: 10px;        
+    height: 300px;
+    
+}
+
 
 .zoom {
   transition: all 0.10s ease; 
