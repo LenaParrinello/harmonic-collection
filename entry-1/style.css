@@ -1,0 +1,38 @@
+.row-wrapper {
+  display: flex;               
+  justify-content: center;     
+  align-items: flex-start;     
+  gap: 40px;                   
+}
+
+.card-container,
+.card-container-2 {
+  display: flex;
+  flex-direction: column;      
+  align-items: center;
+  gap: 20px;
+}
+
+
+zoom {
+  transition: all 0.10s ease; 
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  image-rendering: auto
+}
+
+
+.zoom:hover {
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100vw;         
+  height: 100vh;       
+  object-fit: contain;  
+  z-index: 9999;      
+  margin: 0;
+  padding: 0;
+  transform: none;     
+}
