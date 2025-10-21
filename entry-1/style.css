@@ -15,12 +15,12 @@
 
 
 zoom {
-  transition: all 0.10s ease; 
+  transition: all 1.0s ease; 
   cursor: pointer;
-  max-width: 100%;
+  max-width: 300%;
   height: auto;
   display: inline-block;
-  image-rendering: auto
+  image-rendering: pixelated
 }
 
 
