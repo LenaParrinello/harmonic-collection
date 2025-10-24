@@ -10,12 +10,12 @@
 }
 
 .card {
-  width: 25%;
   background-color: #ffffff;  
     border: 2px solid rgb(199, 240, 132);     
-    border-radius: 10px;        
+    border-radius: 2px;        
     height: 400px;
-    
+    width: 400px;
+    padding-inline: 30px;
 }
 
 
@@ -40,3 +40,4 @@
   padding: 0;
   transform: none;     
 }
+
