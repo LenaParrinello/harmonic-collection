@@ -1,5 +1,5 @@
 .background{
-    background: linear-gradient(#ffda60,#d1650c)no-repeat; background-attachment: fixed;
+    background: linear-gradient(#e2a0f7,#721072)no-repeat; background-attachment: fixed;
   
 }
 
@@ -11,7 +11,7 @@
 
 .card {
   background-color: #ffffff;  
-    border: 2px solid #e4531f;     
+    border: 2px solid #bf78e8;     
     border-radius: 2px;        
     height: 400px;
     width: 400px;
