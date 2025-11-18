@@ -1,0 +1,32 @@
+
+.background{
+    background: linear-gradient(#7dad7c,#114b24)no-repeat; background-attachment: fixed;
+  
+}
+
+.card-container {
+  background-color: rgba(250, 128, 114, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;  
+    border: 2px solid #40bf6e99;     
+    border-radius: 2px;        
+    height: 400px;
+    width: 400px;
+    padding-inline: 30px;
+}
+
+.imagezoom{
+  height: 350px
+  width: 250px;
+}
+  
+.fullsize{
+  display: flex;
+  width: 700px;
+  height: 500px;
+
+}
