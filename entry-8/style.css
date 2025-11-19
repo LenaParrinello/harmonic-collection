@@ -1,8 +1,10 @@
-
 .background{
-    background: linear-gradient(#7dad7c,#114b24)no-repeat; background-attachment: fixed;
+    background: linear-gradient(#a0c995,#246737)no-repeat; 
+    background-attachment: fixed;
   
 }
+
+
 
 .card-container {
   background-color: rgba(250, 128, 114, 0);
@@ -11,22 +13,34 @@
 }
 
 .card {
+width: 25%;
   background-color: #ffffff;  
-    border: 2px solid #40bf6e99;     
-    border-radius: 2px;        
+  border: 2px solid rgb(226, 53, 53);     
+  border-radius: 10px;        
     height: 400px;
-    width: 400px;
-    padding-inline: 30px;
 }
 
-.zoom{
-  height: 350px
 
+.zoom {
+  transition: all 0.10s ease; 
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  image-rendering: auto
 }
-  
-.fullsize{
-  display: flex;
-  width: 700px;
-  height: 500px;
 
+
+.zoom:hover {
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100vw;         
+  height: 100vh;       
+  object-fit: contain;  
+  z-index: 9999;      
+  margin: 0;
+  padding: 0;
+  transform: none;     
 }
+
