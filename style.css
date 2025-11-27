@@ -1,3 +1,72 @@
 body {
   font-family: sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-pack {
+    width: 200px;
+    height: 280px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.revealed-card {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+.revealed-card.show {
+    display: block;
+    animation: spin 0.6s ease;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+.card-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.open-another {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.open-another.show {
+    display: block;
+}
