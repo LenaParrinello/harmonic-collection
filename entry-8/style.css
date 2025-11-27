@@ -1,25 +1,23 @@
 .background{
     background: linear-gradient(#a0c995,#246737)no-repeat; 
     background-attachment: fixed;
-  
 }
-
-
 
 .card-container {
   background-color: rgba(250, 128, 114, 0);
   display: flex;
   gap: 20px;
+  justify-content: center; /* This centers the cards */
 }
 
 .card {
-width: 25%;
   background-color: #ffffff;  
   border: 2px solid rgb(226, 53, 53);     
   border-radius: 10px;        
-    height: 400px;
+  height: 400px;
+  width: 400px;
+  padding-inline: 30px;
 }
-
 
 .zoom {
   transition: all 0.10s ease; 
@@ -27,9 +25,8 @@ width: 25%;
   max-width: 100%;
   height: auto;
   display: inline-block;
-  image-rendering: auto
+  image-rendering: auto;
 }
-
 
 .zoom:hover {
   position: fixed;    
@@ -43,4 +40,3 @@ width: 25%;
   padding: 0;
   transform: none;     
 }
-
