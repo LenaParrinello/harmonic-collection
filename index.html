@@ -5,32 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div>This is my homepage!</div>
-  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+  
+  <style>
+    h1, h2, h3, h4 {
+      font-family: "Press Start 2P";
+      text-align: center;
+    }
+    p {
+      font-family: "Jacquard 12";
+      text-align: center;
+    }
+  </style>
+</head>
 
- <h1>Card Pack Opener</h1>
+<body>
+  <div class="scrolling-title">
+    <h1 class="game-title">FEATHERED FIGHTERS</h1>
+  </div>
+
+  <p>open a pack see what you get!</p>
+
+
     
-    <div class="card-pack" id="cardPack">
-        <p>Click to Open Pack</p>
-    </div>
+  <div class="card-pack" id="cardPack">
+    <p>Click to Open Pack</p>
+  </div>
 
-    <div class="revealed-card" id="revealedCard">
-        <img id="cardImage" class="card-image" src="" alt="Card">
-        <h2 id="cardName"></h2>
-        <p id="cardInfo"></p>
-    </div>
-
-    <button class="open-another" id="openAnother">Open Another Pack</button>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  <div class="revealed-card" id="revealedCard">
+    <img id="cardImage" class="card-image" src="" alt="Card">
+    <h2 id="cardName"></h2>
+    <p id="cardInfo"></p>
+  </div>
 
 
-
+  <script src="script.js"></script>
 </body>
 </html>
