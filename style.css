@@ -12,26 +12,26 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 60px;
-    gap: 80px;  /* Spaces out all major sections */
+    gap: 80px;  
 }
 
 .scrolling-title {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;  /* Small space after scrolling title */
+    margin-bottom: 20px;  
 }
 
 .game-title {
-    font-size: 3em;
+    font-size: 72pt;
     font-weight: bold;
     white-space: nowrap;
     background: linear-gradient(90deg, 
         #ff0000, 
-        #ff7f00, 
-        #ffff00, 
-        #00ff00, 
-        #0000ff, 
-        #8b00ff,
+        #ffa200, 
+        #ffc800, 
+        #ffe100, 
+        #f6fe86, 
+        #f4ff8d,
         #ff0000
     );
     background-size: 200% 100%;
@@ -65,14 +65,18 @@ h1 {
 }
 
 .card-pack {
-    width: 200px;
-    height: 280px;
-    border: 2px solid black;
+    width: 600px;
+    height: 840px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin: 0;  /* No extra margin, body gap handles spacing */
+    margin: 0;  
+    background-image: url('Cardpack.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .revealed-card {
@@ -124,4 +128,8 @@ h1 {
 
 .open-another.show {
     display: block;
+}
+
+.bodytext{
+    font-size: 24pt;
 }
