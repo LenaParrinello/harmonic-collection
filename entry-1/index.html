@@ -1,91 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Title - Entry 1</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Binder Book</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="{path/to/scripts}/page-flip.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+</head>
+<body>
+    <div id="book">
+        <!-- Front Cover -->
+        <div class="page" data-density="hard">
+            <div class="page-content cover">
+                <h1>CARD BINDER</h1>
+            </div>
+        </div>
 
-  </head>
+        <!-- Left Page - First 4 cards -->
+        <div class="page">
+            <div class="page-content">
+                <div class="card-grid">
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-2/" class="card-link">
+                        <img src="professor_bill_Final.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-3/" class="card-link">
+                        <img src="PUDDLES 2.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-4/" class="card-link">
+                        <img src="DUCK_STRAUGHT.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-5/" class="card-link">
+                        <img src="QUAZY_SAGE.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  
-    
-    
-   
+        <!-- Right Page - Second 4 cards -->
+        <div class="page">
+            <div class="page-content">
+                <div class="card-grid">
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-6/" class="card-link">
+                        <img src="QUACKNOSIS.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-7/" class="card-link">
+                        <img src="Asset_12.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-8/" class="card-link">
+                        <img src="Asset_13.jpg" alt="">
+                    </a>
+                    <a href="https://lenaparrinello.github.io/harmonic-collection/entry-9/" class="card-link">
+                        <img src="Asset_14.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-      <h1>FEATHERD FIGHTERS</h1>
-      
-    
+        <!-- Back Cover -->
+        <div class="page" data-density="hard">
+            <div class="page-content cover">
+                <h1>Back Cover</h1>
+            </div>
+        </div>
+    </div>
 
-      <h2>Welcome to you card binder!</h2>
-    
-
-    
-      <p>Below you'll see your card collection</p>
-      
-    
-<style>
-  h1{font-family:"press start 2p";}
-  h2{font-family:"press start 2p";}
-  h3{font-family:"press start 2p";}
-  h4{font-family:"press start 2p";}
-</style>
-
-<style>
-p{font-family:"Jacquard 12";}
-p{ text-align: center;}
-h1{text-align: center;}
-h2{text-align: center;}
-h3{text-align: center;}
-h4{text-align: center;}
-</style>
-
-<div class="card-container"></di>
-  <div class=card>
-<a class=card href="https://lenaparrinello.github.io/harmonic-collection/entry-2/"
-style="text-align: center;">
-  <img src="professor_bill_Final.jpg" alt="" height="350" width="250"> 
-</a>
-
-<a class= card href="https://lenaparrinello.github.io/harmonic-collection/entry-3/"
-style="text-align: center;">
-  <img src="PUDDLES 2.jpg" alt="" height="350" width="250">
-</a>
-
-<a class= card href="https://lenaparrinello.github.io/harmonic-collection/entry-4/"
-style="text-align: center;">
-  <img src="DUCK_STRAUGHT.jpg" alt="" height="350" width="250">
-</a>
-<a class= card href="https://lenaparrinello.github.io/harmonic-collection/entry-5/"
-style="text-align: center;">
-  <img src="QUAZY_SAGE.jpg" alt="" height="350" width="250">
-</a>
-</div>
-
-<div class="card-container-2"></di>
-  <div class=card-2>
-<a class=card href="https://lenaparrinello.github.io/harmonic-collection/entry-6/"
-style="text-align: center;">
-  <img src="QUACKNOSIS.jpg" alt="" height="350" width="250"> 
-</a>
-
-<a class= card-2 href="https://lenaparrinello.github.io/harmonic-collection/entry-7/"
-style="text-align: center;">
-  <img src="Asset_12.jpg" alt="" height="350" width="250">
-</a>
-
-<a class= card-2 href="https://lenaparrinello.github.io/harmonic-collection/entry-8/"
-style="text-align: center;">
-  <img src="Asset_13.jpg" alt="" height="350" width="250">
-</a>
-<a class= card-2 href="https://lenaparrinello.github.io/harmonic-collection/entry-9/"
-style="text-align: center;">
-  <img src="Asset_14.jpg" alt="" height="350" width="250">
-</a>
-</div>
-
-<a href="https://lenaparrinello.github.io/harmonic-collection/"> <p> Home Page </p></a>
-
-<body style="background-color: #d1cbb5;"></body>
+    <script src="script.js"></script>
+</body>
+</html>
