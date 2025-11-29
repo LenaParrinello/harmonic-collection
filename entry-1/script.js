@@ -11,7 +11,7 @@ const pageFlip = new St.PageFlip(document.getElementById('book'), {
     flippingTime: 1000, // Animation duration (1 second)
     usePortrait: true,
     startZIndex: 0,
-    autoSize: true,
+    autoSize: true,    // Back to true
     maxShadowOpacity: 0.5,
     drawShadow: true,
     mobileScrollSupport: true

@@ -5,19 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Binder Book</title>
     <link rel="stylesheet" href="style.css">
-  <script src="{path/to/scripts}/page-flip.browser.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
-</head>
-<body>
-    <div id="book">
-        <!-- Front Cover -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    </head>
+
+<style>
+  h1{font-family:"press start 2p";}
+  h2{font-family:"press start 2p";}
+  h3{font-family:"press start 2p";}
+  h4{font-family:"press start 2p";}
+</style>
+
+<style>
+p{font-family:"Jacquard 12";}
+p{ text-align: center;}
+h1{text-align: center;}
+h2{text-align: center;}
+h3{text-align: center;}
+h4{text-align: center;}
+</style>
+
+  <h1> YOUR CARD BINDER </h1>
+  <p>Open it up to view your collection!</p>
+  
+  
+  <div id="book">
+       
         <div class="page" data-density="hard">
             <div class="page-content cover">
-                <h1>CARD BINDER</h1>
+               
+                
+              
+                <img src="frontcover.jpg" alt="Front Cover" class="cover-image">
+          
             </div>
         </div>
 
-        <!-- Left Page - First 4 cards -->
+      
         <div class="page">
             <div class="page-content">
                 <div class="card-grid">
@@ -37,7 +62,7 @@
             </div>
         </div>
 
-        <!-- Right Page - Second 4 cards -->
+        
         <div class="page">
             <div class="page-content">
                 <div class="card-grid">
@@ -57,14 +82,20 @@
             </div>
         </div>
 
-        <!-- Back Cover -->
+        
         <div class="page" data-density="hard">
             <div class="page-content cover">
-                <h1>Back Cover</h1>
+                
+            
+                
+                <img src="backcover.jpg" alt="Back Cover" class="cover-image">
+                
+                
+              
             </div>
         </div>
     </div>
-
+<p>click to view each card in more detail!</p>
     <script src="script.js"></script>
 </body>
 </html>
