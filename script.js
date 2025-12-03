@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         cardPack.style.display = 'none';
         
-        // Shuffle all 8 cards - NO DUPLICATES
+      
         const shuffledCards = [...cards].sort(() => 0.5 - Math.random());
         
         revealedCard.innerHTML = '';
         revealedCard.classList.add('show');
         
-        // Display cards one by one with delay
+        
         shuffledCards.forEach((card, index) => {
             const timeout = setTimeout(() => {
                 const cardDiv = document.createElement('div');
