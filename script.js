@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         // Add "wow look at that!" text RIGHT AFTER the cards
                         const wowText = document.createElement('p');
                         wowText.id = 'wowText';
-                        wowText.textContent = 'WOW LOOK AT THAT!';
+                        wowText.textContent = 'WOW LOOK AT THAT! You pulled all the cards, what a pro!';
                         wowText.style.fontSize = '24px';
                         wowText.style.fontWeight = 'bold';
                         wowText.style.fontFamily = "'Press Start 2P', cursive";
-                        wowText.style.marginTop = '30px';
+                        wowText.style.marginTop = '40px';
                         wowText.style.gridColumn = '1 / -1';
                         revealedCard.appendChild(wowText);
                         

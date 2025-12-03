@@ -12,7 +12,7 @@
 
 .card {
   background-color: #ffffff;  
-  border: 2px solid rgb(226, 53, 53);     
+  border: 2px solid rgb(46, 108, 63);     
   border-radius: 10px;        
   height: 400px;
   width: 400px;
@@ -40,3 +40,12 @@
   padding: 0;
   transform: none;     
 }
+
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 24px;
+}
+
+p{font-size: 16px;}
