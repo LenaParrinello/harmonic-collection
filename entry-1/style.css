@@ -2,44 +2,88 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, 
+        #66c2ea 0%, 
+        #4b54a2 25%, 
+        #93b0fb 50%, 
+        #4fccfe 75%, 
+        #feb600 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 40px 20px;
+    overflow-x: hidden;
+    gap: 40px;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1 {
     font-family: "Press Start 2P";
     text-align: center;
-    margin-bottom: 80px;  
+    margin: 0;
     font-size: 72px;
-    color:#e99a39
- 
+    background: linear-gradient(90deg, 
+        #ff0000, 
+        #ffa200, 
+        #ffc800, 
+        #ffe100, 
+        #f6fe86, 
+        #f4ff8d,
+        #ff0000
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titleGradient 3s ease infinite;
+}
+
+@keyframes titleGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 p{
-     text-align: center;
-    margin-bottom: 100px;  
+    text-align: center;
+    margin: 0;
     font-size: 24px;
+    color: white;
 }
-
 
 .book-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
 }
 
 #book {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .page {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210, 210, 210);
     overflow: hidden;
 }
 
@@ -53,11 +97,61 @@ p{
 .cover {
     padding: 0 !important;
     margin: 0;
-    display: block;
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 191, 59);
     overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
+.cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.1) 25%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.1) 75%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    pointer-events: none;
+    z-index: 100;
+}
+
+.cover::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: 101;
+    animation: glossShine 3s ease-in-out infinite;
+}
+
+@keyframes glossShine {
+    0%, 100% {
+        transform: translate(-10%, -10%);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(10%, 10%);
+        opacity: 0.8;
+    }
+}
 
 .cover-image {
     width: 100%;
@@ -68,10 +162,32 @@ p{
     padding: 0;
 }
 
+.cover-text {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #ffffff;
+    width: 80%;
+}
+
+.cover-text h2 {
+    font-family: "Press Start 2P";
+    font-size: 32px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.cover-text p {
+    font-family: "Jacquard 12";
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+}
+
 .home-link {
     text-decoration: none;
-    color: #333;
-    margin-top: 20px;
+    color: #a577ea;
+    margin: 0;
 }
 
 .home-link:hover {

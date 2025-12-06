@@ -1,17 +1,16 @@
-
 const pageFlip = new St.PageFlip(document.getElementById('book'), {
-    width: 600,        // Page width
+    width: 600,        // Single page width
     height: 800,       // Page height
-    size: "fixed",     // Fixed size
+    size: "fixed",     
     minWidth: 400,
     maxWidth: 800,
     minHeight: 600,
     maxHeight: 1000,
-    showCover: true,   // Show cover page
-    flippingTime: 1000, // Animation duration (1 second)
-    usePortrait: true,
+    showCover: true,   
+    flippingTime: 1000,
+    usePortrait: false,  // Changed to false for landscape/spread view
     startZIndex: 0,
-    autoSize: true,    // Back to true
+    autoSize: false,   
     maxShadowOpacity: 0.5,
     drawShadow: true,
     mobileScrollSupport: true
