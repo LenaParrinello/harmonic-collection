@@ -8,10 +8,18 @@ h1{
   font-size: 60px;
 }
 h2{
-  font-size: 24px;
+  font-size: 28px;
 }
 
-p{font-size: 16px;}
+h3{
+  font-size: 20px;
+}
+
+p{
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .card-container {
   background-color: rgba(250, 128, 114, 0);
   display: flex;
@@ -19,11 +27,14 @@ p{font-size: 16px;}
 }
 
 .card {
-width: 25%;
+  width: 25%;
   background-color: #ffffff;  
   border: 2px solid rgb(226, 53, 53);     
   border-radius: 10px;        
-    height: 400px;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 

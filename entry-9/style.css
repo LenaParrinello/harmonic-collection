@@ -7,16 +7,18 @@
   background-color: rgba(250, 128, 114, 0);
   display: flex;
   gap: 20px;
-  justify-content: center; /* This centers the cards */
+  justify-content: center;
 }
 
 .card {
+  width: 30%;
   background-color: #ffffff;  
   border: 2px solid #e4ca1f;     
   border-radius: 10px;        
   height: 400px;
-  width: 400px;
-  padding-inline: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .zoom {
@@ -45,7 +47,13 @@ h1{
   font-size: 60px;
 }
 h2{
-  font-size: 24px;
+  font-size: 28px;
+}
+h3{
+  font-size: 20px;
 }
 
-p{font-size: 16px;}
+p{
+  font-size: 18px;
+  line-height: 1.6;
+}
