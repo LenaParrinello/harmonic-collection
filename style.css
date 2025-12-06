@@ -18,11 +18,12 @@ body {
 .scrolling-title {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
+    padding: 20px 0; 
 }
 
 .game-title {
-    font-size: 72pt;
+    font-size: 90pt;
     font-weight: bold;
     white-space: nowrap;
     background: linear-gradient(90deg, 
@@ -38,13 +39,15 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: scroll 10s linear infinite, gradient 3s ease infinite;
+    animation: scroll 12s linear infinite, gradient 3s ease infinite;
     margin: 0;
+    display: inline-block;
+    padding-left: 100%;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);

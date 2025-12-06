@@ -1,4 +1,4 @@
-// Initialize the PageFlip
+
 const pageFlip = new St.PageFlip(document.getElementById('book'), {
     width: 600,        // Page width
     height: 800,       // Page height
