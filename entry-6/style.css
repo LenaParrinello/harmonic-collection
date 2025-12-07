@@ -56,3 +56,33 @@ p{
   font-size: 18px;
   line-height: 1.6;
 }
+
+
+
+
+/* Make images and videos fit their containers */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make the overall container flexible */
+body {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* If you have a fixed-width container, make it flexible */
+.container, #wrapper, .content {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Make tables scrollable on mobile */
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
