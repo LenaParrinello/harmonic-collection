@@ -3,44 +3,6 @@
     background-attachment: fixed;
 }
 
-.card-container {
-  background-color: rgba(250, 128, 114, 0);
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  width: 25%;
-  background-color: #ffffff;  
-  border: 2px solid #e77e55;     
-  border-radius: 10px;        
-  height: 400px;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
-.zoom {
-  transition: all 0.10s ease; 
-  cursor: pointer;
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  image-rendering: auto
-}
-
-.zoom:hover {
-  position: fixed;    
-  top: 0;
-  left: 0;
-  width: 100vw;         
-  height: 100vh;       
-  object-fit: contain;  
-  z-index: 9999;      
-  margin: 0;
-  padding: 0;
-  transform: none;     
-}
 
 h1{
   font-size: 60px;
@@ -48,6 +10,7 @@ h1{
 h2{
   font-size: 28px;
 }
+
 h3{
   font-size: 20px;
 }
@@ -57,9 +20,56 @@ p{
   line-height: 1.6;
 }
 
+.card-container {
+  background-color: rgba(250, 128, 114, 0);
+  display: flex;
+  gap: 20px;
+}
 
+.card {
+  width: 25%;
+  background-color: #ffffff;  
+  border: 2px solid rgb(226, 53, 53);     
+  border-radius: 10px;        
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
 
+.zoom {
+  transition: all 0.3s ease; 
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
 
+/* Blurred backdrop that covers whole screen */
+.zoom-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
+}
+
+/* When clicked/zoomed */
+.zoom.zoomed {
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;         
+  height: 90vh;       
+  object-fit: contain;  
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 /* Make images and videos fit their containers */
 img, video, iframe {

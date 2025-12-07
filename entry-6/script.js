@@ -1,5 +1,4 @@
-
-  document.querySelectorAll('.zoom').forEach(function(img) {
+document.querySelectorAll('.zoom').forEach(function(img) {
   img.addEventListener('click', function() {
     if (this.classList.contains('zoomed')) {
       // Zoom out - remove backdrop

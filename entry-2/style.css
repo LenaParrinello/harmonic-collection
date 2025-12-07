@@ -1,7 +1,6 @@
 .background{
     background: linear-gradient(#d6472b,#e68f43)no-repeat; 
     background-attachment: fixed;
-  
 }
 
 h1{
@@ -37,32 +36,39 @@ p{
   overflow-y: auto;
 }
 
-
 .zoom {
-  transition: all 0.10s ease; 
+  transition: all 0.3s ease; 
   cursor: pointer;
   max-width: 100%;
   height: auto;
   display: inline-block;
-  image-rendering: auto
 }
 
-
-.zoom:hover {
-  position: fixed;    
+/* Blurred backdrop that covers whole screen */
+.zoom-backdrop {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;         
-  height: 100vh;       
-  object-fit: contain;  
-  z-index: 9999;      
-  margin: 0;
-  padding: 0;
-  transform: none;     
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
 }
 
-
-
+/* When clicked/zoomed */
+.zoom.zoomed {
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;         
+  height: 90vh;       
+  object-fit: contain;  
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 /* Make images and videos fit their containers */
 img, video, iframe {
