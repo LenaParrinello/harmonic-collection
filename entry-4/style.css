@@ -13,6 +13,10 @@
 }
 
 
+h1, h2, h3, p {
+  margin: 20px 0;
+}
+
 h1{
   font-size: 60px;
 }
@@ -33,17 +37,23 @@ p{
   background-color: rgba(250, 128, 114, 0);
   display: flex;
   gap: 20px;
+  margin: 20px 0;
 }
 
 .card {
   width: 25%;
-  background-color: #e5c347;  
-  border: 2px solid rgb(255, 255, 255);     
+  background-color: #ebcd56;  
+  border: 2px solid rgb(226, 177, 53);     
   border-radius: 10px;        
   height: 400px;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+}
+
+/* Even spacing inside cards */
+.card > * {
+  margin: 15px 0;
 }
 
 .zoom {
@@ -89,14 +99,14 @@ img, video, iframe {
 /* Make the overall container flexible */
 body {
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 /* If you have a fixed-width container, make it flexible */
 .container, #wrapper, .content {
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 

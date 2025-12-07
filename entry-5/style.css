@@ -3,21 +3,47 @@
     background-attachment: fixed;
 }
 
+h1, h2, h3, p {
+  margin: 20px 0;
+}
+
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+p{
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .card-container {
   background-color: rgba(250, 128, 114, 0);
   display: flex;
   gap: 20px;
+  margin: 20px 0;
 }
 
 .card {
   width: 25%;
   background-color: #ffffff;  
-  border: 2px solid rgb(199, 240, 132);     
+  border: 2px solid rgb(58, 188, 134);     
   border-radius: 10px;        
   height: 400px;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+}
+
+/* Even spacing inside cards */
+.card > * {
+  margin: 15px 0;
 }
 
 .zoom {
@@ -26,6 +52,18 @@
   max-width: 100%;
   height: auto;
   display: inline-block;
+}
+
+/* Blurred backdrop that covers whole screen */
+.zoom-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
 }
 
 /* When clicked/zoomed */
@@ -42,19 +80,6 @@
   box-sizing: border-box;
 }
 
-/* Blurred backdrop */
-.zoom.zoomed::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-}
-
 /* Make images and videos fit their containers */
 img, video, iframe {
   max-width: 100%;
@@ -64,14 +89,14 @@ img, video, iframe {
 /* Make the overall container flexible */
 body {
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 /* If you have a fixed-width container, make it flexible */
 .container, #wrapper, .content {
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
