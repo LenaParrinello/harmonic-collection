@@ -16,3 +16,40 @@ document.querySelectorAll('.zoom').forEach(function(img) {
     }
   });
 });
+
+
+
+document.querySelectorAll('.zoom').forEach(function(img) {
+  img.addEventListener('click', function() {
+    // Get the zoom image source from data attribute
+    const zoomSrc = this.getAttribute('data-zoom-src');
+    
+    if (!zoomSrc) {
+      console.error('No data-zoom-src attribute found on image');
+      return;
+    }
+
+    // Create backdrop
+    const backdrop = document.createElement('div');
+    backdrop.className = 'zoom-backdrop';
+    
+    // Create zoomed image
+    const zoomImg = document.createElement('img');
+    zoomImg.className = 'zoom-image';
+    zoomImg.src = zoomSrc;
+    zoomImg.alt = this.alt;
+    
+    // Add to page
+    document.body.appendChild(backdrop);
+    document.body.appendChild(zoomImg);
+    
+    // Close when clicking backdrop or image
+    function closeZoom() {
+      backdrop.remove();
+      zoomImg.remove();
+    }
+    
+    backdrop.addEventListener('click', closeZoom);
+    zoomImg.addEventListener('click', closeZoom);
+  });
+});
