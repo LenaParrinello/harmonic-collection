@@ -1,7 +1,8 @@
 .background{
-    background: linear-gradient(#d6472b,#e68f43)no-repeat; 
+    background: linear-gradient(#f71e1e,#f96b33)no-repeat; 
     background-attachment: fixed;
 }
+
 
 h1, h2, h3, p {
   margin: 20px 0;
@@ -33,7 +34,7 @@ p{
 .card {
   width: 25%;
   background-color: #ffffff;  
-  border: 2px solid rgb(226, 177, 53);     
+  border: 2px solid rgb(187, 28, 28);     
   border-radius: 10px;        
   height: 400px;
   padding: 20px;
@@ -78,21 +79,6 @@ p{
   z-index: 9999;
   padding: 20px;
   box-sizing: border-box;
-}
-
-/* The zoomed image that appears */
-.zoom-image {
-  position: fixed;    
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;         
-  height: 350px;       
-  object-fit: contain;  
-  z-index: 9999;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
 /* Make images and videos fit their containers */
